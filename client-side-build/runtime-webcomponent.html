@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Feed me!</title>
+  </head>
+  <body>
+    <h1>Welcome to Feed me!</h1>
+
+    <!-- These scripts don't render anything immediately -->
+    <!-- Instead they each define a custom element type -->
+    <script src="https://browse.example.com/bundle.js"></script>
+    <script src="https://order.example.com/bundle.js"></script>
+    <script src="https://profile.example.com/bundle.js"></script>
+
+    <div id="micro-frontend-root"></div>
+
+    <script type="text/javascript">
+      // These element types are defined by the above scripts
+      const webComponentsByRoute = {
+        '/': 'micro-frontend-browse-restaurants',
+        '/order-food': 'micro-frontend-order-food',
+        '/user-profile': 'micro-frontend-user-profile',
+      };
+      const webComponentType = webComponentsByRoute[window.location.pathname];
+
+      // Having determined the right web component custom element type,
+      // we now create an instance of it and attach it to the document
+      const root = document.getElementById('micro-frontend-root');
+      const webComponent = document.createElement(webComponentType);
+      root.appendChild(webComponent);
+    </script>
+  </body>
+</html>
