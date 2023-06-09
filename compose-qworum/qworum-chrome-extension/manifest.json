@@ -1,0 +1,94 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 3,
+
+  "name"        : "__MSG_extension_name__",
+  "description" : "__MSG_extension_description__",
+  "version"     : "1.0.16",
+  "version_name": "1.0.16",
+
+  "default_locale": "en",
+
+  "icons": {
+    "16" : "/assets/images/icons/Qworum logo - alpha - 16px.png",
+    "32" : "/assets/images/icons/Qworum logo - alpha - 32px.png",
+    "48" : "/assets/images/icons/Qworum logo - alpha - 48px.png",
+    "128": "/assets/images/icons/Qworum logo - alpha - 128px.png"
+  },
+
+  "action": {
+    "default_icon": {
+      "16" : "/assets/images/icons/inactive/Qworum logo - alpha - grey - 16px.png",
+      "32" : "/assets/images/icons/inactive/Qworum logo - alpha - grey - 32px.png",
+      "48" : "/assets/images/icons/inactive/Qworum logo - alpha - grey - 48px.png",
+      "128": "/assets/images/icons/inactive/Qworum logo - alpha - grey - 128px.png"
+    },
+    "default_title": "__MSG_extension_name__",
+    "default_popup": "popup/index.html"
+  },  
+
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type"          : "module"
+  },
+
+  "content_scripts": [{
+    "matches": [
+      "http://127.0.0.1:8080/*", 
+      "http://127.0.0.1:3000/*",
+      "http://127.0.0.1:5500/*",
+      "http://127.0.0.1:5501/*",
+      "http://127.0.0.1:5502/*",
+
+      "http://localhost:8080/*", 
+      "http://localhost:3000/*",
+      "http://localhost:5500/*",
+      "http://localhost:5501/*",
+      "http://localhost:5502/*",
+
+      "https://*.qworum.net/*"
+    ],
+    "js" : ["content/content-script.js"],
+    "css": ["content/content-styles.css"]
+  }],
+
+  "externally_connectable": {
+    "matches": [
+      "http://127.0.0.1:8080/*",
+      "http://127.0.0.1:3000/*",
+      "http://127.0.0.1:5500/*",
+      "http://127.0.0.1:5501/*",
+      "http://127.0.0.1:5502/*",
+
+      "http://localhost:8080/*", 
+      "http://localhost:3000/*",
+      "http://localhost:5500/*",
+      "http://localhost:5501/*",
+      "http://localhost:5502/*",
+
+      "https://*.qworum.net/*"
+    ]
+  },
+  
+  "host_permissions": [
+    "http://127.0.0.1:8080/*",
+    "http://127.0.0.1:3000/*",
+    "http://127.0.0.1:5500/*",
+    "http://127.0.0.1:5501/*",
+    "http://127.0.0.1:5502/*",
+
+    "http://localhost:8080/*", 
+    "http://localhost:3000/*",
+    "http://localhost:5500/*",
+    "http://localhost:5501/*",
+    "http://localhost:5502/*",
+
+    "https://*.qworum.net/*"
+  ],
+  "permissions": [
+    "webRequest"
+  ],
+
+  "incognito": "spanning"
+}

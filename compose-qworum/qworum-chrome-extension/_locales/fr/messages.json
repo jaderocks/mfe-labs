@@ -1,0 +1,30 @@
+{
+  "extension_name": {
+    "message": "Qworum - Le Web des Services"
+  },
+  "extension_description": {
+    "message": "La plate-forme frontale pour des applications web suralimentées de nouvelle génération."
+  },
+
+  "application_returned_result": {
+    "message": "L'application Qworum a returné ce résultat:\n* $data$",
+    "placeholders": {
+      "data": {
+        "content": "$1"
+      }
+    }
+  },
+
+  "application_raised_fault": {
+    "message": "L'application Qworum a returné cette faute:\n* $fault$",
+    "placeholders": {
+      "fault": {
+        "content": "$1"
+      }
+    }
+  },
+
+  "popup_test": {
+    "message": "Qworum"
+  }
+}

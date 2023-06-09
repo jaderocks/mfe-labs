@@ -1,0 +1,29 @@
+{
+  "extension_name": {
+    "message": "Qworum - Das Service-Web"
+  },
+  "extension_description": {
+    "message": "Die Front-End-Plattform für überladene Webanwendungen der neuen Generation."
+  },
+
+  "application_returned_result": {
+    "message": "Die Qworum-Anwendung hat dieses Ergebnis zurückgegeben:\n* $data$",
+    "placeholders": {
+      "data": {
+        "content": "$1"
+      }
+    }
+  },
+  "application_raised_fault": {
+    "message": "Die Qworum-Anwendung ist durch dieser Fehler beendet worden:\n* $fault$",
+    "placeholders": {
+      "fault": {
+        "content": "$1"
+      }
+    }
+  },
+
+  "popup_test": {
+    "message": "Qworum"
+  }
+}

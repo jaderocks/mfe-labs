@@ -1,0 +1,35 @@
+{
+  "extension_name": {
+    "description": "The name of this Chrome extension.",
+    "message"    : "Qworum - The Service Web"
+  },
+  "extension_description": {
+    "description": "The description of this Chrome extension.",
+    "message"    : "The frontend platform for next-generation supercharged web applications."
+  },
+
+  "application_returned_result": {
+    "description": "The main call of the Qworum session has terminated by returning a result.",
+    "message"    : "Qworum application has returned this result:\n* $data$",
+    "placeholders": {
+      "data": {
+        "content": "$1",
+        "example": "Json({status: 500})"
+      }
+    }
+  },
+  "application_raised_fault": {
+    "description": "The main call of the Qworum session has terminated by raising a fault.",
+    "message"    : "Qworum application has raised this fault:\n* $fault$",
+    "placeholders": {
+      "fault": {
+        "content": "$1",
+        "example": "Fault(type: platform entitlement)"
+      }
+    }
+  },
+
+  "popup_test": {
+    "message": "Qworum"
+  }
+}

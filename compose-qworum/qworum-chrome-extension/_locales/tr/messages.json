@@ -1,0 +1,30 @@
+{
+  "extension_name": {
+    "message": "Qworum - İnternetin Hizmet Ağı"
+  },
+  "extension_description": {
+    "message": "Yeni nesil süperşarjlı web uygulamalarını destekleyen önyüz platformu."
+  },
+
+  "application_returned_result": {
+    "message": "Qworum uygulaması şu sonuçla bitti:\n* $data$",
+    "placeholders": {
+      "data": {
+        "content": "$1"
+      }
+    }
+  },
+
+  "application_raised_fault": {
+    "message": "Qworum uygulaması şu hatayla bitti:\n* $fault$",
+    "placeholders": {
+      "fault": {
+        "content": "$1"
+      }
+    }
+  },
+
+  "popup_test": {
+    "message": "Qworum"
+  }
+}

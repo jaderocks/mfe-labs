@@ -1,0 +1,10 @@
+{
+  "include": [
+    "./build/qworum-for-web-pages.js"
+  ],
+  "compilerOptions": {
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "allowJs": true
+  }
+}

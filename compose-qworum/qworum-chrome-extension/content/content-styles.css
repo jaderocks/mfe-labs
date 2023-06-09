@@ -1,0 +1,10 @@
+/* h1 {
+  background-color: red;
+} */
+
+@namespace qrm url(https://qworum.com/ns/2.0/instruction/);
+@namespace html url(http://www.w3.org/1999/xhtml);
+qrm|* { display: none;}
+qrm|* * { display: none;}
+html|*[id="webkit-xml-viewer-source-xml"] ~ * { display: none;}
+
